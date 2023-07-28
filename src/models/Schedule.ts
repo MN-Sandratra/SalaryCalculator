@@ -21,4 +21,4 @@ const ScheduleSchema = new Schema({
 });
 
 // Création du modèle Mongoose associé au schéma
-export const ScheduleModel = model<Schedule>('Schedule', ScheduleSchema);
+export const ScheduleModel =mongoose.models.Schedule || model<Schedule>('Schedule', ScheduleSchema);
