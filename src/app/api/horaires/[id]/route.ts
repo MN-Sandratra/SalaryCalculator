@@ -4,7 +4,6 @@ import { NextResponse } from "next/server";
 
 export async function GET(req:Request,{params}) {
     const id=params.id;
-
     try{
         await connectMongoDB();
         const currentHoraire=await ScheduleModel.findById(id);

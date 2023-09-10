@@ -4,7 +4,6 @@ import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
     // Récupération des données depuis la requête POST
-    console.log("body send")
     const body = await req.json();
     console.log(body);
 
